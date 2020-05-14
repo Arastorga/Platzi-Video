@@ -1,12 +1,18 @@
 body{
     margin: 0px;
-    background-color: #21C08B;
+    background-color: #8F57FD;
+    font-family: 'Muli', sans-serif;
 }
 
+/* -------------------------------header------------------------------- */
+
 header{
-    background-color: #21C08B;
+    background-color: #8F57FD;
     width: 100%;
     height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header__img{
@@ -26,6 +32,7 @@ header{
     position: absolute;
     width: 100px;
     text-align: right;
+    margin: 0px;
     margin-left: -14px;
 }
 
@@ -42,7 +49,53 @@ header{
     text-decoration: none;
 }
 
+.header__menu li a:hover{
+    text-decoration: underline;
+}
+
 .header__menu--profile{
     margin-right: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header__menu--profile img{
+    margin-right: 8px;
     width: 40px;
+}
+
+.header__menu--profile p{
+    margin: 0px;
+    display: flex;
+    color: white;
+}
+
+/* ------------------------------- buscador ------------------------------------ */
+
+.main{
+    height: 300px;
+    text-align: center;
+}
+
+.main__tittle{
+    color: white;
+    font-size: 25px;
+}
+
+.input{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 25px;
+    color: white;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    height: 50px;
+    padding: 0px 20px;
+    width: 70%;
+    outline: none;
+}
+
+.input::placeholder{
+    color: white;
 }
