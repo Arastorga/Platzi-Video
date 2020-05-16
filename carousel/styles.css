@@ -22,4 +22,21 @@ body {
     border-radius: 20px;
     overflow: hidden;
     margin-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 750ms all;
+    transform-origin: center left;
+}
+
+.carousel__item:hover ~ .carousel__item{
+    transform: translate3d(100px, 0, 0);
+}
+
+.carousel__container:hover .carousel__item{
+    opacity: 0.3;
+}
+
+.carousel__container:hover .carousel__item:hover{
+    transform: scale(1.5);
+    opacity: 1;
 }
