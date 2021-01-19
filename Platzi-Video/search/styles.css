@@ -26,7 +26,6 @@ header{
 }
 
 .header__menu ul{
-    display: none;
     list-style: none;
     padding: 0px;
     position: absolute;
@@ -36,9 +35,9 @@ header{
     margin-left: -14px;
 }
 
-.header__menu:hover ul, ul:hover{
+/* .header__menu:hover ul, ul:hover{
     display: block;
-}
+} */
 
 .header__menu li{
     margin: 10px 0px;
@@ -69,6 +68,10 @@ header{
     margin: 0px;
     display: flex;
     color: white;
+}
+
+.header__menu .header__menu--profile::-webkit-details-marker{
+    display: none;
 }
 
 /* ------------------------------- buscador ------------------------------------ */
