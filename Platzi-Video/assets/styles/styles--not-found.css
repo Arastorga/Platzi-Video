@@ -1,0 +1,45 @@
+header {
+    background-color: #fd9657;
+    margin: 0;
+}
+
+.not-found{
+    background:  linear-gradient(180deg, rgba(253,150,87,1) 0%, rgba(143,87,253,1) 100%);;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 120px;
+    margin: 0;
+}
+
+footer{
+    background: #8f57fd;
+    position: fixed;
+    bottom: 0;
+}
+
+.animated {
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flip {
+    0% {transform: perspective(400px) translateZ(0) rotateY(0) scale(1);animation-timing-function: ease-out;}
+    40% {transform: perspective(400px) translateZ(150px) rotateY(170deg) scale(1);animation-timing-function: ease-out;}
+    50% {transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);animation-timing-function: ease-in;}
+    80% {transform: perspective(400px) translateZ(0) rotateY(360deg) scale(.95);animation-timing-function: ease-in;}
+    100% {transform: perspective(400px) translateZ(0) rotateY(360deg) scale(1);animation-timing-function: ease-in;}
+}
+
+.animated.flip {
+    backface-visibility: visible;
+    animation-name: flip;
+}
